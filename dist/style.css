@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.5rem;
+    background-color: #1a2a3a;
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+    header .titulo {
+        flex-grow: 1;
+        line-height: 0;
+    }
+
+    header .novo {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 1px solid white;
+        border-radius: 100%;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+.pagina {
+    padding: 4.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.reclameet {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 0.5rem;
+}
+
+    .reclameet .detalhes {
+        margin-bottom: 0.25rem; 
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+        .reclameet .detalhes .foto {
+            width: 3rem;
+            height: 3rem;
+            margin-right: 0.5rem;
+            border-radius: 100%;
+        }
+
+        .reclameet .detalhes .nome {
+            margin: 0;
+            flex-grow: 1;
+            line-height: 3rem;
+        }
+
+        .reclameet .detalhes .votos {
+            margin: 0;
+            line-height: 3rem;
+            font-weight: bold;
+            color: #E74C3C;
+        }
+
+        .reclameet .detalhes .votar {
+            cursor: pointer;
+            border: none;
+            background-color: transparent;
+        }
+
+    .reclameet .reclamacao {
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+.novo-reclameet {
+}
+
+    .novo-reclamet label {
+        width: 100%;
+        margin: 0 0 0.5rem 0;
+        cursor: pointer;
+    }
+
+    .novo-reclameet textarea {
+        width: 100%;
+        height: 6rem;
+        font-size: 1.3rem;
+        border: 1px solid #eeeeee;
+        padding: 0.25rem;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 1rem;
+    }
+
+    .novo-reclameet button {
+        margin-top: 0.5rem;
+        border: none;
+        padding: 1rem;
+        padding: 0.5rem 1rem;
+        border-radius: 3px;
+        align-self: flex-start;
+        background-color: #ff2d9a;
+        color: white;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
