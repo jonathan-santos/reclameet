@@ -11,6 +11,7 @@ servidor.use(function(req, res, next) {
     next();
 });
 
+//In memory database
 var usuarios = [
     { id: 0, nome: "Soham Patterson", foto: "https://randomuser.me/api/portraits/men/72.jpg" },
     { id: 1, nome: "Gabriel Chapman", foto: "https://randomuser.me/api/portraits/men/66.jpg" },
@@ -52,6 +53,6 @@ servidor.post("/like/:id", function(req, res) {
     res.sendStatus(400);
 });
 
-servidor.listen(3000, function(req, res) {
+servidor.listen(process.env.PORT || 3000, function(req, res) {
     console.log("Servidor rodando!");
 })

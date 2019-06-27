@@ -16,6 +16,7 @@ function preencherPaginaComReclameets() {
 }
 
 function criarReclameet(reclameet) {
+    //Criando um reclameet
     var reclameetElement = document.createElement('div');
     reclameetElement.className = "reclameet reclameet-" + reclameet.id;
     var domString = '<div class="detalhes">' +
@@ -28,10 +29,14 @@ function criarReclameet(reclameet) {
     '</div>' +
     '<p class="reclamacao">' + reclameet.texto + '</p>';
     reclameetElement.innerHTML = domString;
+
+
+    //Adicionando o reclameet criado no div com a classe reclameets
     var divReclameets = document.querySelector('.reclameets');
     divReclameets.appendChild(reclameetElement);
 }
 
+//Dar like
 function darLike(id) {
     var likeRequest = new XMLHttpRequest();
     likeRequest.open("post", "/like/" + id);
